@@ -2,10 +2,9 @@ package com.yihua.wechat.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 import com.yihua.wechat.model.AccessToken;
-import com.yihua.wechat.model.Menu;
+import com.yihua.wechat.model.menu.Menu;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;

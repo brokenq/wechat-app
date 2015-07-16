@@ -21,7 +21,7 @@ public class SignUtil {
      * @return
      */
     public static boolean checkSignature(String signature, String timestamp, String nonce){
-        String[] files = {token, timestamp, nonce};
+        String[] files = {CodeUtil.WX_TOKEN, timestamp, nonce};
         Arrays.sort(files);
         StringBuilder content = new StringBuilder();
         for (String file : files) {

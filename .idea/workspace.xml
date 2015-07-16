@@ -1,7 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b7a67b2-985a-45ef-9058-e84f6d8febb1" name="Default" comment="" />
+    <list default="true" id="6b7a67b2-985a-45ef-9058-e84f6d8febb1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/init/Config.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/ViewButton.java" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\controller\CoreController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\controller\HelloController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\AccessToken.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\Article.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\BaseButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\CommonButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\ComplexButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\Menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\Music.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\BaseReq.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\event\BaseReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\event\LocationReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\event\MenuReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\event\QRCodeReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\event\SubscribeReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\msg\BaseReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\msg\ImageReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\msg\LinkReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\msg\LocationReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\msg\TextReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\msg\VideoReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\req\msg\VoiceReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\BaseResp.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\msg\BaseRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\msg\ImageRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\msg\MusicRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\msg\NewsRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\msg\TextRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\msg\VideoRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\model\resp\msg\VoiceRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\service\CoreService.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\service\PushMsgService.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\CodeUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\MenuEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\MenuManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\MsgUtil$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\MsgUtil$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\MsgUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\SignUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\WeChatUtil$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\WeChatUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\classes\com\yihua\wechat\utils\YhX509TrustManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\test-classes\com\yihua\wechat\controller\AppTests.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\test-classes\com\yihua\wechat\controller\MainTest.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\controller\CoreController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\controller\HelloController.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\AccessToken.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\Article.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\BaseButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\CommonButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\ComplexButton.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\Menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\Music.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\BaseReq.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\event\BaseReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\event\LocationReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\event\MenuReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\event\QRCodeReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\event\SubscribeReqEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\msg\BaseReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\msg\ImageReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\msg\LinkReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\msg\LocationReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\msg\TextReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\msg\VideoReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\req\msg\VoiceReqMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\BaseResp.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\msg\BaseRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\msg\ImageRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\msg\MusicRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\msg\NewsRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\msg\TextRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\msg\VideoRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\model\resp\msg\VoiceRespMsg.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\service\CoreService.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\service\PushMsgService.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\CodeUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\MenuEnum.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\MenuManager.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\MsgUtil$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\MsgUtil$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\MsgUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\SignUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\WeChatUtil$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\WeChatUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\brokenq\projects\wechat-app\target\wechat-app\WEB-INF\classes\com\yihua\wechat\utils\YhX509TrustManager.class" afterPath="" />
+      <change type="MOVED" beforePath="C:\brokenq\projects\wechat-app\src\main\java\com\yihua\wechat\model\BaseButton.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/BaseButton.java" />
+      <change type="MOVED" beforePath="C:\brokenq\projects\wechat-app\src\main\java\com\yihua\wechat\model\CommonButton.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/ClickButton.java" />
+      <change type="MOVED" beforePath="C:\brokenq\projects\wechat-app\src\main\java\com\yihua\wechat\model\ComplexButton.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/ComplexButton.java" />
+      <change type="MOVED" beforePath="C:\brokenq\projects\wechat-app\src\main\java\com\yihua\wechat\model\Menu.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wechat-app.war" afterPath="$PROJECT_DIR$/target/wechat-app.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/CodeUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/CodeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/SignUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/SignUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/WeChatUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/WeChatUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wechat-app/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/target/wechat-app/WEB-INF/mvc-dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/wechat-app/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/wechat-app/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="wechat-app.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,63 +128,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WeChatUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/WeChatUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19366197">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuManager.java">
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/init/Config.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-              <folding>
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/controller/HelloController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PushMsgService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/service/PushMsgService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoreController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/controller/CoreController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="90" selection-start-line="36" selection-start-column="90" selection-end-line="36" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/SignUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvc-dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +194,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/CodeUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
+              <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -103,6 +209,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -111,13 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/resp/VoiceMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/resp/NewsMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/resp/MusicMsg.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/service/RespMsgService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/req/event/SubscribleEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/req/event/QRCode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/req/event/LocationEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/req/msg/BaseReqMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/resp/msg/BaseRespMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/resp/msg/MusicRespMsg.java" />
@@ -150,7 +252,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/resp/msg/VideoRespMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/resp/msg/VoiceRespMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/YhX509TrustManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/SignUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/WeChatUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/conf.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/ComplexButton.java" />
@@ -159,9 +260,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/CodeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/service/PushMsgService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/ViewButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/CommonButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/ClickButton.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/SignUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/init/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/CodeUtil.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -272,7 +381,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -314,94 +423,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -430,12 +451,12 @@
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../environment/Git/bin/git.exe" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -979,16 +1000,16 @@
       <workItem from="1436923013699" duration="31000" />
       <workItem from="1436923074633" duration="2973000" />
       <workItem from="1436926074343" duration="9760000" />
-      <workItem from="1437009199775" duration="6018000" />
+      <workItem from="1437009199775" duration="11508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49426000" />
+    <option name="totallyTimeSpent" value="54916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="1" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1003,14 +1024,14 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5427136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27641654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27641654" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40703517" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7118928" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1032,7 +1053,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40703517" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40703517" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19430485" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1061,7 +1082,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1070,43 +1091,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/BaseButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/CommonButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#230#231#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/ComplexButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="e#295#296#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MsgUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1136,25 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3312102">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/yihua/wechat/controller/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41438356">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MsgUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.074074">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1170,16 +1139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/CommonButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#230#231#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1345,40 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/SignUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42530757">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/BaseButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19366197">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/ComplexButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34859154">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <element signature="e#295#296#0" expanded="false" />
-            <element signature="e#339#340#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/conf.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.116197184">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/service/CoreService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1389,7 +1314,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15492958">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
@@ -1397,25 +1322,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/controller/CoreController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30105633">
-          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/service/PushMsgService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.0070422534">
           <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1423,35 +1332,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/CodeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="66" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.34859154">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/ViewButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/BaseButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/ComplexButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38732395">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/model/menu/ClickButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1459,15 +1389,108 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="46" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MenuEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/MsgUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <folding>
+            <element signature="e#2304#2963#0" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/WeChatUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19366197">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/conf.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/CodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="79" selection-start-line="65" selection-start-column="79" selection-end-line="65" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/init/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/controller/CoreController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="90" selection-start-line="36" selection-start-column="90" selection-end-line="36" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yihua/wechat/utils/SignUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>

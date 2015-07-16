@@ -1,7 +1,7 @@
 package com.yihua.wechat.utils;
 
 import com.yihua.wechat.model.*;
-import com.yihua.wechat.model.Menu;
+import com.yihua.wechat.model.menu.*;
 
 /**
  * 菜单管理器
@@ -9,6 +9,9 @@ import com.yihua.wechat.model.Menu;
  */
 public class MenuManager {
 
+    /**
+     * 创建菜单
+     */
     public static void main(String[] args) {
         AccessToken accessToken = WeChatUtil.getAccessToken(CodeUtil.WX_APP_ID, CodeUtil.WX_APP_SECRET);
         if (null == accessToken){
@@ -28,30 +31,30 @@ public class MenuManager {
     private static Menu getMenu() {
 //        二级菜单
 //        工地进展
-        CommonButton progressQueryBtn           = getCommonButton(MenuEnum.PROGRESS_QUERY, CodeUtil.REQ_EVENT_CLICK);
-        CommonButton progressCheckBtn           = getCommonButton(MenuEnum.PROGRESS_CHECK, CodeUtil.REQ_EVENT_CLICK);
+        ClickButton progressQueryBtn           = getClickButton(MenuEnum.PROGRESS_QUERY);
+        ClickButton progressCheckBtn           = getClickButton(MenuEnum.PROGRESS_CHECK);
 //        跟进事项
-        CommonButton followUpPurchaseBtn        = getCommonButton(MenuEnum.FOLLOW_PURCHASE, CodeUtil.REQ_EVENT_CLICK);
-        CommonButton followUpRectificationBtn   = getCommonButton(MenuEnum.FOLLOW_RECTIFICATION, CodeUtil.REQ_EVENT_CLICK);
+        ClickButton followUpPurchaseBtn        = getClickButton(MenuEnum.FOLLOW_PURCHASE);
+        ClickButton followUpRectificationBtn   = getClickButton(MenuEnum.FOLLOW_RECTIFICATION);
 //        我的
-        CommonButton mineContractBtn            = getCommonButton(MenuEnum.MINE_CONTRACT, CodeUtil.REQ_EVENT_CLICK);
-        CommonButton mineConstructionTeamBtn    = getCommonButton(MenuEnum.MINE_CONSTRUCTION_TEAM, CodeUtil.REQ_EVENT_CLICK);
-        CommonButton mineDecorationTeamBtn      = getCommonButton(MenuEnum.MINE_DECORATION_TEAM, CodeUtil.REQ_EVENT_CLICK);
-        CommonButton mineCallCenterBtn          = getCommonButton(MenuEnum.MINE_CALL_CENTER, CodeUtil.REQ_EVENT_CLICK);
-        CommonButton minePhoneBtn               = getCommonButton(MenuEnum.MINE_PHONE, CodeUtil.REQ_EVENT_CLICK);
+        ClickButton mineContractBtn            = getClickButton(MenuEnum.MINE_CONTRACT);
+        ClickButton mineConstructionTeamBtn    = getClickButton(MenuEnum.MINE_CONSTRUCTION_TEAM);
+        ClickButton mineDecorationTeamBtn      = getClickButton(MenuEnum.MINE_DECORATION_TEAM);
+        ClickButton mineCallCenterBtn          = getClickButton(MenuEnum.MINE_CALL_CENTER);
+        ClickButton minePhoneBtn               = getClickButton(MenuEnum.MINE_PHONE);
 
 //        一级菜单
         ComplexButton progressBtn = new ComplexButton();
         progressBtn.setName(MenuEnum.PROGRESS.getName());
-        progressBtn.setSub_button(new CommonButton[]{progressQueryBtn, progressCheckBtn});
+        progressBtn.setSub_button(new ClickButton[]{progressQueryBtn, progressCheckBtn});
 
         ComplexButton followUpBtn = new ComplexButton();
         followUpBtn.setName(MenuEnum.FOLLOW.getName());
-        followUpBtn.setSub_button(new CommonButton[]{followUpPurchaseBtn, followUpRectificationBtn});
+        followUpBtn.setSub_button(new ClickButton[]{followUpPurchaseBtn, followUpRectificationBtn});
 
         ComplexButton mineBtn = new ComplexButton();
         mineBtn.setName(MenuEnum.MINE.getName());
-        mineBtn.setSub_button(new CommonButton[]{mineContractBtn, mineConstructionTeamBtn, mineDecorationTeamBtn, mineCallCenterBtn, minePhoneBtn});
+        mineBtn.setSub_button(new ClickButton[]{mineContractBtn, mineConstructionTeamBtn, mineDecorationTeamBtn, mineCallCenterBtn, minePhoneBtn});
 
         Menu menu = new Menu();
         menu.setButton(new BaseButton[]{progressBtn, followUpBtn, mineBtn});
@@ -59,16 +62,28 @@ public class MenuManager {
     }
 
     /**
-     * 实例化CommonButton
+     * 实例化ClickButton
      * @param menuEnum 菜单枚举
-     * @param eventType 事件类型
-     * @return CommonButton对象
+     * @return ClickButton对象
      */
-    private static CommonButton getCommonButton(MenuEnum menuEnum, String eventType){
-        CommonButton btn = new CommonButton();
+    private static ClickButton getClickButton(MenuEnum menuEnum){
+        ClickButton btn = new ClickButton();
         btn.setName(menuEnum.getName());
         btn.setKey(menuEnum.getKey());
-        btn.setType(eventType);
+        btn.setType(CodeUtil.REQ_EVENT_CLICK);
+        return btn;
+    }
+
+    /**
+     * 实例化ViewButton
+     * @param menuEnum 菜单枚举
+     * @return ViewButton对象
+     */
+    private static ViewButton getViewButton(MenuEnum menuEnum){
+        ViewButton btn = new ViewButton();
+        btn.setName(menuEnum.getName());
+        btn.setUrl(menuEnum.getKey());
+        btn.setType(CodeUtil.REQ_EVENT_VIEW);
         return btn;
     }
 }

@@ -49,6 +49,19 @@ public class CodeUtil {
     public final static String REQUEST_METHOD_POST = "POST";
     public final static String ENCODING = "UTF-8";
 
+    /**
+     * 初始化
+     */
+    public static void init(){
+        Properties properties = readProperties();
+        WX_TOKEN = properties.getProperty(WX_TOKEN_KEY);
+        WX_APP_ID = properties.getProperty(WX_APP_ID_KEY);
+        WX_APP_SECRET = properties.getProperty(WX_APP_SECRET_KEY);
+    }
+
+    /**
+     * 读取配置
+     */
     public static Properties readProperties(){
         ClassPathResource resource = new ClassPathResource("/conf.properties");
         try {
@@ -58,13 +71,5 @@ public class CodeUtil {
             e.printStackTrace();
         }
         return null;
-    }
-
-    public static void main(String[] args) {
-        Properties properties = readProperties();
-        WX_TOKEN = properties.getProperty(WX_TOKEN_KEY);
-        WX_APP_ID = properties.getProperty(WX_APP_ID_KEY);
-        WX_APP_SECRET = properties.getProperty(WX_APP_SECRET_KEY);
-        System.out.println(String.format("%s\n%s\n%s\n", WX_APP_ID, WX_APP_SECRET, WX_TOKEN));
     }
 }
