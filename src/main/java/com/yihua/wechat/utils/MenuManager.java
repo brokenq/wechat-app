@@ -13,7 +13,7 @@ public class MenuManager {
      * 创建菜单
      */
     public static void main(String[] args) {
-        AccessToken accessToken = WeChatUtil.getAccessToken(CodeUtil.WX_APP_ID, CodeUtil.WX_APP_SECRET);
+        WxAccessToken accessToken = WeChatUtil.getAccessToken(CodeUtil.WX_APP_ID, CodeUtil.WX_APP_SECRET);
         if (null == accessToken){
             return;
         }

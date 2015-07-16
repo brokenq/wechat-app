@@ -1,5 +1,7 @@
 package com.yihua.wechat.utils;
 
+import com.yihua.wechat.model.WxValidateUrlReq;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
@@ -10,18 +12,19 @@ import java.util.Arrays;
  */
 public class SignUtil {
 
-    // 微信公众平台token
-    public static String token = "wechat";
-
     /**
-     *
-     * @param signature
-     * @param timestamp
-     * @param nonce
-     * @return
+     * 签名校验
+     * 加密/校验流程如下：
+     * <ul>
+     *     <li>将token、timestamp、nonce三个参数进行字典序排序</li>
+     *     <li>将三个参数字符串拼接成一个字符串进行sha1加密</li>
+     *     <li>开发者获得加密后的字符串可与signature对比，标识该请求来源于微信</li>
+     * </ul>
+     * @param validateReq 微信服务器验证地址有效性请求对象
+     * @return true：校验成功 | false：校验失败
      */
-    public static boolean checkSignature(String signature, String timestamp, String nonce){
-        String[] files = {CodeUtil.WX_TOKEN, timestamp, nonce};
+    public static boolean checkSignature(WxValidateUrlReq validateReq){
+        String[] files = {CodeUtil.WX_TOKEN, validateReq.getTimestamp(), validateReq.getNonce()};
         Arrays.sort(files);
         StringBuilder content = new StringBuilder();
         for (String file : files) {
@@ -36,7 +39,7 @@ public class SignUtil {
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        return tmpStr != null ? tmpStr.equals(signature.toUpperCase()) : false;
+        return tmpStr != null ? tmpStr.equals(validateReq.getSignature().toUpperCase()) : false;
     }
 
     /**

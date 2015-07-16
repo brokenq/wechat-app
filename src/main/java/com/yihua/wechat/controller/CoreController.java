@@ -1,5 +1,6 @@
 package com.yihua.wechat.controller;
 
+import com.yihua.wechat.model.WxValidateUrlReq;
 import com.yihua.wechat.service.CoreService;
 import com.yihua.wechat.utils.MsgUtil;
 import com.yihua.wechat.utils.SignUtil;
@@ -25,16 +26,13 @@ public class CoreController {
     private CoreService coreService;
 
     /**
-     * 接入微信服务器
-     * @param signature
-     * @param timestamp
-     * @param nonce
-     * @param echostr
+     * 接入微信服务器，验证服务器地址的有效性
+     * @param validateReq 微信服务器验证公众平台地址的有效性请求
      */
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public String access(String signature, String timestamp, String nonce, String echostr) {
-        return SignUtil.checkSignature(signature, timestamp, nonce) ? "success" : "fault";
+    public String access(WxValidateUrlReq validateReq) {
+        return SignUtil.checkSignature(validateReq) ? "success" : "fault";
     }
 
     /**

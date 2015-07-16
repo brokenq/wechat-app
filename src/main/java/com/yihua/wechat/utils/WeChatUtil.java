@@ -3,7 +3,7 @@ package com.yihua.wechat.utils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import com.yihua.wechat.model.AccessToken;
+import com.yihua.wechat.model.WxAccessToken;
 import com.yihua.wechat.model.menu.Menu;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -39,17 +39,17 @@ public class WeChatUtil {
      * @param appSecret
      * @return
      */
-    public static AccessToken getAccessToken(String appId, String appSecret) {
-        AccessToken accessToken = null;
+    public static WxAccessToken getAccessToken(String appId, String appSecret) {
+        WxAccessToken wxAccessToken = null;
         String reqUrl = String.format(ACCESS_TOKEN_URL, appId, appSecret);
         Map<String, String> map = httpRequest(reqUrl, CodeUtil.REQUEST_METHOD_GET, null);
         if (null == map) {
-            return accessToken;
+            return wxAccessToken;
         }
-        accessToken = new AccessToken();
-        accessToken.setToken(map.get(ACCESS_TOKEN_FIELD));
-        accessToken.setExpiresIn(Integer.parseInt(map.get(EXPIRES_IN_FIELD)));
-        return accessToken;
+        wxAccessToken = new WxAccessToken();
+        wxAccessToken.setToken(map.get(ACCESS_TOKEN_FIELD));
+        wxAccessToken.setExpiresIn(Integer.parseInt(map.get(EXPIRES_IN_FIELD)));
+        return wxAccessToken;
     }
 
     public static int createMenu(Menu menu, String accessToken){
