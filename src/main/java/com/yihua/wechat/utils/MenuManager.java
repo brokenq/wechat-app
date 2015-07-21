@@ -9,16 +9,31 @@ import com.yihua.wechat.model.menu.*;
  */
 public class MenuManager {
 
+//    accessToken 通过ehcache来进行管理，由于ehcache一直下载不了，暂时先测试
+    private static String ACCESS_TOKEN = "";
+
+    public static String getAccessToken() {
+        return ACCESS_TOKEN;
+    }
+
     /**
      * 创建菜单
      */
     public static void main(String[] args) {
+        createMenu();
+    }
+
+    /**
+     * 创建菜单
+     */
+    public static void createMenu(){
         WxAccessToken accessToken = WeChatUtil.getAccessToken(CodeUtil.WX_APP_ID, CodeUtil.WX_APP_SECRET);
         if (null == accessToken){
             return;
         }
         int errorCode = WeChatUtil.createMenu(getMenu(), accessToken.getToken());
         if (0 == errorCode){
+            ACCESS_TOKEN = accessToken.getToken();
             System.out.println("菜单创建成功！");
             return;
         }

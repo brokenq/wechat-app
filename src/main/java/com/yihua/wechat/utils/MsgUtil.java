@@ -6,6 +6,7 @@ import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
 import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;
 import com.thoughtworks.xstream.io.xml.XppDriver;
 import com.yihua.wechat.model.Article;
+import com.yihua.wechat.model.resp.BaseResp;
 import com.yihua.wechat.model.resp.msg.MusicRespMsg;
 import com.yihua.wechat.model.resp.msg.NewsRespMsg;
 import com.yihua.wechat.model.resp.msg.TextRespMsg;
@@ -94,7 +95,6 @@ public class MsgUtil {
                     if (cdata) {
                         writer.write(String.format("<![CDATA[%s]]>", text));
                     }
-                    super.writeText(writer, text);
                 }
             };
         }

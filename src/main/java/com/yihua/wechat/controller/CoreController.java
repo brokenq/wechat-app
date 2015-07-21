@@ -31,18 +31,26 @@ public class CoreController {
      */
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
-    public String access(WxValidateUrlReq validateReq) {
-        return SignUtil.checkSignature(validateReq) ? "success" : "fault";
+    public String access(String signature, String timestamp, String nonce, String echostr) {
+        WxValidateUrlReq validateReq = new WxValidateUrlReq();
+        validateReq.setEchostr(echostr);
+        validateReq.setNonce(nonce);
+        validateReq.setSignature(signature);
+        validateReq.setTimestamp(timestamp);
+        return SignUtil.checkSignature(validateReq) ? echostr : null;
     }
 
     /**
      * 处理微信服务器POST请求
      * @param request
      */
+    @RequestMapping(method = RequestMethod.POST)
+    @ResponseBody
     public String core(HttpServletRequest request){
         try {
             Map<String, String> requestMap = MsgUtil.parseXml(request);
-            coreService.processRequest(requestMap);
+            String msg = coreService.processRequest(requestMap);
+            return msg;
         } catch (IOException e) {
             e.printStackTrace();
         } catch (DocumentException e) {

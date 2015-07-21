@@ -55,7 +55,7 @@ public class PushMsgService {
      */
     private String pushTextMsg(BaseResp baseResp) {
         TextRespMsg msg = new TextRespMsg();
-        BeanUtils.copyProperties(msg, baseResp);
+        BeanUtils.copyProperties(baseResp, msg);
         msg.setMsgType(CodeUtil.RESP_MSG_TEXT);
         msg.setContent("test");
         return MsgUtil.textMsgToXml(msg);
