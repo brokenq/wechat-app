@@ -3,8 +3,10 @@ package com.yihua.wechat.utils;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.core.util.QuickWriter;
 import com.thoughtworks.xstream.io.HierarchicalStreamWriter;
+import com.thoughtworks.xstream.io.xml.DomDriver;
 import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;
 import com.thoughtworks.xstream.io.xml.XppDriver;
+import com.thoughtworks.xstream.mapper.MapperWrapper;
 import com.yihua.wechat.model.Article;
 import com.yihua.wechat.model.resp.BaseResp;
 import com.yihua.wechat.model.resp.msg.MusicRespMsg;
@@ -14,6 +16,7 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
@@ -22,6 +25,7 @@ import java.io.Writer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 /**
  * 消息处理工具类
@@ -80,21 +84,37 @@ public class MsgUtil {
     /**
      * 重载XStream对象，使其支持CDATA块
      */
-    private static XStream xstream = new XStream(new XppDriver(){
-        public HierarchicalStreamWriter createWriter(Writer out){
-            return new PrettyPrintWriter(out){
-                boolean cdata = true;
+    private static XStream xstream = new XStream(new XppDriver() {
+        @Override
+        public HierarchicalStreamWriter createWriter(Writer out) {
+            return new PrettyPrintWriter(out) {
+                boolean cdata = false;
 
                 @Override
                 public void startNode(String name, Class clz) {
+                    if (!name.equals("xml")) {
+                        char[] chars = name.toCharArray();
+                        if (chars[0] >= 'a' && chars[0] <= 'z') {
+                            chars[0] = (char) ((int)chars[0] - 32);
+                        }
+                        name = new String(chars);
+                    }
                     super.startNode(name, clz);
                 }
 
                 @Override
-                protected void writeText(QuickWriter writer, String text) {
-                    if (cdata) {
-                        writer.write(String.format("<![CDATA[%s]]>", text));
+                public void setValue(String text) {
+                    if (null != text && !StringUtils.isEmpty(text)) {
+                        Pattern intPattern = Pattern.compile("[0-9]+");
+                        Pattern floatPattern = Pattern.compile("[0-9]*(\\\\.?)[0-9]*");
+                        cdata = intPattern.matcher(text).matches() || floatPattern.matcher(text).matches() ? false : true;
                     }
+                    super.setValue(text);
+                }
+
+                @Override
+                protected void writeText(QuickWriter writer, String text) {
+                    writer.write(cdata ? String.format("<![CDATA[%s]]>", text) : text);
                 }
             };
         }

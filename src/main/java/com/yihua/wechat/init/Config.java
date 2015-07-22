@@ -1,7 +1,7 @@
 package com.yihua.wechat.init;
 
 import com.yihua.wechat.utils.CodeUtil;
-import com.yihua.wechat.utils.MenuManager;
+import com.yihua.wechat.manage.MenuManager;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 
